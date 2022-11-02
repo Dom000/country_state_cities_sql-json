@@ -11,12 +11,13 @@ CREATE TABLE IF NOT EXISTS `countries` (
   `shortname` varchar(3) NOT NULL,
   `name` varchar(150) NOT NULL,
   `phonecode` int(11) NOT NULL,
+  `status` BOOLEAN NOT NULL DEFAULT true,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=249 ;
 
 
 
-INSERT INTO `countries` (`id`, `shortname`, `name`, `phonecode`) VALUES
+INSERT INTO `countries` (`id`, `shortname`, `name`, `phonecode`,`status`) VALUES
 (1, 'AF', 'Afghanistan', 93),
 (2, 'AL', 'Albania', 355),
 (3, 'DZ', 'Algeria', 213),
